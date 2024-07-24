@@ -1,6 +1,7 @@
 import { Hover } from "./Hover" 
 import {useState} from 'react';
 
+import mainpic from '../../public/images/bicycle.jpg';
 
 export function Info () {
 
@@ -15,7 +16,7 @@ export function Info () {
 
             <section className="flex items-center justify-center w-[100%] h-auto min-[771px]:max-w-[523px]" onMouseEnter={Enter} onMouseLeave={Leave}>
                 <div className="relative w-[100%] rr max-[770px]:p-[50px] max-[350px]:p-[30px] rounded-[40px] flex items-center justify-center p-[30px]">
-                        <img className="min-w-[220px] w-[100%] rounded-[40px]" src="../src/images/bicycle.jpg" alt="" />
+                        <img className="min-w-[220px] w-[100%] rounded-[40px]" src={mainpic} alt="" />
                         { hover && <Hover /> }
                 </div>
             </section>

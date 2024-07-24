@@ -1,26 +1,31 @@
 import { useState, useEffect } from 'react';
 import { Carousel } from './Slider.jsx';
 
+import teamMember1 from '../../public/images/team-member-1.jpg';
+import teamMember2 from '../../public/images/team-member-2.jpg';
+import teamMember3 from '../../public/images/team-member-3.jpg';
+
 const data = [
     {
-        src: '../src/images/team-member-1.jpg',
+        src: teamMember1,
         position: 'AENEAN SOLLICITUDIN',
         about: 'Ribendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
         name: 'DUISED ODIO',
     },
     {
-        src: '../src/images/team-member-2.jpg',
+        src: teamMember2,
         position: 'RIBENDUM AUCTOR',
         about: 'Aenean sollicitudin, nisi elit consequat ipsum, nec sagittis sem nibh id elit',
         name: 'NISI ELIT',
     },
     {
-        src: '../src/images/team-member-3.jpg',
+        src: teamMember3,
         position: 'SAGITTIS SEM',
         about: 'Ribendum auctornisi elit consequat ipsum, nisi elit sem nibh id elit.',
         name: 'DUISED ODIO',
     }
 ];
+
 
 export function Team() {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);

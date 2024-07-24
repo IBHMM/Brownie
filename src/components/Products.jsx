@@ -1,20 +1,25 @@
 import { useState, useEffect } from "react";
 import { Carousel } from "./Slider";
 
+import product1 from '../../public/images/product-1.png';
+import product2 from '../../public/images/product-2.png';
+import product3 from '../../public/images/product-3.png';
+
 const data = [
   {
-    src: '../src/images/product-1.png',
+    src: product1,
     name: 'Table'
   },
   {
-    src: '../src/images/product-2.png',
+    src: product2,
     name: 'Smart Phone'
   },
   {
-    src: '../src/images/product-3.png',
+    src: product3,
     name: 'COGS'
   },
 ];
+
 
 export function Products() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);

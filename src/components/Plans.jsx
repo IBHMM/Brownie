@@ -1,19 +1,22 @@
 import { useState, useEffect } from 'react';
 import { Plan } from './Plan';
+import plan1 from '../../public/images/plan-1.png';
+import plan2 from '../../public/images/plan-2.png';
+import plan3 from '../../public/images/plan-3.png';
 
 const plan = [
     {
-        src: '../src/images/plan-1.png',
+        src: plan1,
         title: 'DUIS SED ODIO SIT AMET',
         info: 'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
     },
     {
-        src: '../src/images/plan-2.png',
+        src: plan2,
         title: 'SAGITTIS SEM NIBHD',
         info: 'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
     },
     {
-        src: '../src/images/plan-3.png',
+        src: plan3,
         title: 'DUIS SED ODIO SIT AMET',
         info: 'Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.',
     },
